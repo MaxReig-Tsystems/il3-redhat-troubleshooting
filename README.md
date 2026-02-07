@@ -1,5 +1,5 @@
 # il3-redhat-troubleshooting
-## Curso REDHAT: Diagnostics & Troubleshooting (RHEL 8 / Rocky)
+## Curso REDHAT: Diagnostics & Troubleshooting (RHEL 9 / Rocky)
 
 <p align="center">
   <img src="day1/images/linux_spartan.jpeg" alt="Tux Spartan" width="300"><br>
