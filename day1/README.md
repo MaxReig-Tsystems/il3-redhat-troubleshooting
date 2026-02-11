@@ -50,10 +50,47 @@ El objetivo de esta sesión es que salgas con un **laboratorio funcional** desde
 
 ---
 
+## Bloque teórico reforzado (primeras 2 horas)
+
+> Recomendado si quieres profundizar en los apartados con más “miga” antes del lab.
+
+### Tramo 0:00–0:30 — Cómo piensa un administrador cuando diagnostica
+- Diferencia entre **síntoma** y **causa raíz**.
+- Método base: observación → hipótesis → comprobación → corrección → validación.
+- Regla de oro: no corregir sin tener una evidencia mínima.
+
+### Tramo 0:30–1:00 — Sistema de archivos como mapa mental de Linux
+- Jerarquía FHS y qué esperar en `/etc`, `/var`, `/home`, `/tmp`, `/usr`, `/opt`.
+- Qué rutas se tocan en operación diaria y cuáles conviene tocar con más cuidado.
+- Relación entre estructura de disco y troubleshooting (ejemplo: “no arranca servicio por falta de espacio en `/var`”).
+
+### Tramo 1:00–1:30 — Permisos bien entendidos (no solo comandos)
+- Modelo `u/g/o` y diferencia entre permisos de fichero y de directorio.
+- Por qué en directorios el bit `x` representa “atravesar/acceder”.
+- `umask` como política por defecto: impacto directo en incidencias de acceso.
+- Lectura de `ls -l` para localizar bloqueos en menos de 1 minuto.
+
+### Tramo 1:30–2:00 — Usuarios, grupos e identidad del proceso
+- Quién eres (`id`) vs con qué permisos efectivos actúas en cada contexto.
+- Grupos primarios/secundarios y su impacto en carpetas compartidas.
+- Ficheros de identidad (`/etc/passwd`, `/etc/shadow`, `/etc/group`) y cómo verificarlos sin romper nada.
+- Mini-caso guiado: “usuario existe, pero no puede escribir en carpeta compartida”.
+
+---
+
+## Distribución recomendada de la sesión (4 horas)
+
+- **Bloque 1 (2h):** teoría guiada + preguntas de diagnóstico.
+- **Bloque 2 (1h 20m):** demo + lab de usuarios/permisos.
+- **Bloque 3 (40m):** revisión de errores frecuentes + checklist final.
+
+---
+
 ## Material asociado
 
 - `comandos-dia1.md` → chuleta de comandos del día 1
 - (Opcional) `labs-dia1.md` → guía de laboratorio y validaciones
+- `../MEJORAS-CURSO.md` → propuesta pedagógica general para sesiones de 4 horas
 
 ---
 
@@ -69,4 +106,3 @@ En el **día 2** entraremos con:
 - Gestión de software (dnf/yum y repositorios)
 - Almacenamiento (montajes persistentes y LVM básico)
 - Servicios con `systemctl`
-
