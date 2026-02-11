@@ -62,6 +62,36 @@ En esta sesión vamos a reforzar tres pilares del troubleshooting en entornos Re
 
 ---
 
+## Bloque teórico reforzado (primeras 2 horas)
+
+### Tramo 0:00–0:40 — Gestión de software con visión operativa
+- Diferencia real entre paquete, dependencia, repositorio y metadatos.
+- Qué información necesitas antes de actualizar en un sistema crítico.
+- Cómo razonar incidencias típicas: paquete no encontrado, conflicto de dependencias, repo inaccesible.
+- Cuándo usar actualización completa vs actualización selectiva.
+
+### Tramo 0:40–1:20 — Almacenamiento sin atajos mentales
+- Cadena completa: disco → partición/PV → VG → LV → filesystem → montaje.
+- Diferenciar problema de capa de bloque vs problema de filesystem vs problema de montaje.
+- Rol de `/boot` y `swap` en operación y diagnóstico.
+- Por qué LVM facilita recuperación y crecimiento, y qué riesgos introduce si no se valida.
+
+### Tramo 1:20–2:00 — Servicios con `systemd` y lectura de estado
+- Qué significa realmente “active (running)”, “failed”, “inactive”.
+- Relación entre `systemctl status` y `journalctl` para encontrar causa raíz.
+- Diferencia entre “arrancar ahora” y “habilitar al boot”.
+- Mini-caso guiado: servicio no arranca por dependencia/configuración.
+
+---
+
+## Distribución recomendada de la sesión (4 horas)
+
+- **Bloque 1 (2h):** teoría dnf/repos + almacenamiento/LVM + systemd.
+- **Bloque 2 (1h 25m):** demo técnica de flujo completo (disco nuevo → LVM → fstab → verificación).
+- **Bloque 3 (35m):** lab autónomo + debrief de errores frecuentes.
+
+---
+
 ## Lab del día 2 – Filesystems persistentes con LVM
 
 ### Objetivo del lab
@@ -83,6 +113,7 @@ En esta sesión vamos a reforzar tres pilares del troubleshooting en entornos Re
 - `comandos-dia2.md` → chuleta de comandos del día 2 (dnf/yum, discos, LVM, systemctl)
 - `labs-dia2.md` → lab guiado con validaciones y checklist final
 - `images/` → capturas del día 2 (si las añades)
+- `../MEJORAS-CURSO.md` → propuesta pedagógica general para sesiones de 4 horas
 
 ---
 
@@ -98,4 +129,3 @@ En el **día 3** entraremos con:
 - redes (NetworkManager / `nmcli`)
 - seguridad base (`firewalld`) y SELinux (modo básico)
 - lab integrando disco + servicio + firewall
-
