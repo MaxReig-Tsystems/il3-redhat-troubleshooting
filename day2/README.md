@@ -140,6 +140,9 @@ En esta sesión vamos a reforzar tres pilares del troubleshooting en entornos Re
 ---
 
 ## Material asociado (repositorio)
+- `tema1-gestion-software.md` → teoria ampliada del tema 1
+- `tema2-almacenamiento-lvm.md` → teoria ampliada del tema 2
+- `tema3-servicios-systemctl.md` → teoria ampliada del tema 3
 - `comandos-dia2.md` → chuleta de comandos del día 2 (dnf/yum, discos, LVM, systemctl)
 - `labs-dia2.md` → lab guiado con validaciones y checklist final
 - `images/` → capturas del día 2 (si las añades)
@@ -159,6 +162,3 @@ En el **día 3** entraremos con:
 - redes (NetworkManager / `nmcli`)
 - seguridad base (`firewalld`) y SELinux (modo básico)
 - lab integrando disco + servicio + firewall
-
-
-##########################################
