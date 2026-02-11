@@ -1,4 +1,4 @@
-# il3-redhat-troubleshooting
+# IL3-redhat-troubleshooting
 ## Curso REDHAT: Diagnostics & Troubleshooting (RHEL 9 / Rocky)
 
 <p align="center">
